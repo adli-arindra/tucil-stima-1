@@ -32,6 +32,8 @@ public class Piece {
                 char currentChar = piece.get(i).charAt(j);
                 if (currentChar != ' ') {
                     currentLine.add(1);
+                } else {
+                    currentLine.add(0);
                 }
             }
             shape.add(currentLine);

@@ -17,7 +17,7 @@ public class Input {
             int idx = 0;
             String line;
             char lastChar = '!';
-            List<String> currentLine = new ArrayList<String>();
+            List<String> currentPiece = new ArrayList<String>();
             while ((line = reader.readLine()) != null) {
                 if (idx == 0) {
                     int[] numbers = parseStringToInts(line);
@@ -31,14 +31,15 @@ public class Input {
                 else {
                     if (lastChar == '!') lastChar = getCharFromString(line);
                     if (lastChar != getCharFromString(line)) {
-                        pieces.add(new Piece(currentLine));
-                        currentLine = new ArrayList<String>();
+                        pieces.add(new Piece(currentPiece));
+                        currentPiece = new ArrayList<String>();
                         lastChar = getCharFromString(line);
                     }
-                    currentLine.add(line);
+                    currentPiece.add(line);
                 }
                 idx ++;
             }
+            pieces.add(new Piece(currentPiece));
         } catch (IOException e) {
             e.printStackTrace();
         }
