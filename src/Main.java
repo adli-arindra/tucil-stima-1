@@ -14,11 +14,10 @@ public class Main {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
-        System.out.print("Masukan nama file txt: ");
-        String path = scanner.nextLine();
         try {
-            Input.read("input/" + path);
+            System.out.print("Enter the name of the txt file located in the test folder: ");
+            String path = scanner.nextLine();
+            Input.read("../test/" + path);
             pieces = Input.getPieces();
     
             boards = new Stack<>();
@@ -28,7 +27,7 @@ public class Main {
             Timer.start();
             solve();
         } catch (Exception e) {
-            System.out.println("Pastikan input sudah benar dan sesuai format!");
+            System.out.println("Make sure the input is correct and follows the required format!");
         }
     }
 

@@ -5,4 +5,4 @@ GEEEA
 GEEAA
 
 Total iterations: 70186
-Time spent: 161 ms
+Time spent: 230 ms
