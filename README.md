@@ -15,10 +15,9 @@ jar --version
 Untuk mengkompilasi program tersebut, jalankan *prompt* berikut
 
 ```sh
-javac -d bin src/Main.java src/utils/*. src/objects/*.java
+javac -d bin src/Main.java src/utils/*.java src/objects/*.java
 cd bin
-jar cfm Run.jar 
-MANIFEST.MF *.class objects/*.class utils/*.class
+jar cfm Run.jar MANIFEST.MF *.class objects/*.class utils/*.class
 ```
 
 ## Cara Menjalankan

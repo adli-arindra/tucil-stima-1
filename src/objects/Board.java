@@ -109,7 +109,7 @@ public class Board {
     }
 
     public void writeToFile(int iterations, long time) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("../output.txt"))) {
             for (List<Character> line : this.state) {
                 for (Character ch : line) {
                     writer.write(ch);
