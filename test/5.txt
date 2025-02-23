@@ -1,36 +1,5 @@
-11 5 12
+3 3 1
 DEFAULT
-AA
-A
-A
-BB
-BBB
- C
-CC
-C
-D
-D
-DD
- D
-E
-EE
- EE
-FF
- F
- F
- F
-H
-HH
-IIII
-  I 
- J
-JJ
- JJ
-KKK
-K K
- L
-LL
- L
-  M
-  M
-MMM
+AAA
+AAA
+AAA
