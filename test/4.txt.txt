@@ -1,0 +1,6 @@
+JJJ
+YZJ
+YYY
+
+Total iterations: 57
+Time spent: 31 ms

@@ -12,12 +12,13 @@ public class Main {
     public static Stack<Board> boards;
     public static int iterations = 0;
     public static Scanner scanner = new Scanner(System.in);
+    public static String filename;
 
     public static void main(String[] args) {
         try {
-            System.out.print("Enter the name of the txt file located in the test folder: ");
-            String path = scanner.nextLine();
-            Input.read("../test/" + path);
+            System.out.print("Enter the name of the txt file located in the problems folder: ");
+            filename = scanner.nextLine();
+            Input.read("../problems/" + filename);
             pieces = Input.getPieces();
     
             boards = new Stack<>();
@@ -74,7 +75,7 @@ public class Main {
         Character command = scanner.next().charAt(0);
         
         if (command == 'y') {
-            completedBoard.writeToFile(iterations, Timer.get());
+            completedBoard.writeToFile(iterations, Timer.get(), filename);
             System.out.println();
             System.out.println("Berhasil menyimpan file dengan nama\u001B[34m output.txt \u001B[0m");
             System.out.println();

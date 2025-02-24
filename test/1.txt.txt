@@ -1,0 +1,8 @@
+FFFDD
+FFCDB
+GCCBB
+GEEEA
+GEEAA
+
+Total iterations: 70186
+Time spent: 103 ms

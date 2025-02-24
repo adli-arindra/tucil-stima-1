@@ -1,0 +1,8 @@
+CCCCC
+CAAAC
+CABAC
+CAAAC
+CCCCC
+
+Total iterations: 211
+Time spent: 50 ms

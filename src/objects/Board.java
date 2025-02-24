@@ -108,8 +108,8 @@ public class Board {
         System.out.println();
     }
 
-    public void writeToFile(int iterations, long time) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("../output.txt"))) {
+    public void writeToFile(int iterations, long time, String filename) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("../test/" + filename + ".txt"))) {
             for (List<Character> line : this.state) {
                 for (Character ch : line) {
                     writer.write(ch);

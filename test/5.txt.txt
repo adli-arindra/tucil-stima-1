@@ -1,0 +1,6 @@
+AAA
+AAA
+AAA
+
+Total iterations: 1
+Time spent: 30 ms
